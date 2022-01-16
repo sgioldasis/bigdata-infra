@@ -1,6 +1,6 @@
 # data/
 base/hdfs/namenode/
-base/postgresql/
+# base/postgresql/
 base/hdfs/datanode1/
 base/hdfs/datanode2/
 
