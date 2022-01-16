@@ -9,13 +9,22 @@ tasks:
 ports:
   # JupyterLab  : Port 8889
   - port: 8889
-    onOpen: open-browser
   # Hue         : Port 8888 using admin/admin
   - port: 8888
-    onOpen: open-browser
   # Minio       : Port 9001 using savas/savas123
   - port: 9001
-    onOpen: open-browser
+  - port: 33061
+  - port: 50070
+  - port: 4040
+  - port: 9000
+  - port: 50080
+  - port: 9083
+  - port: 50075
+  - port: 8080
+  - port: 10000
+  - port: 7077
+  - port: 8182
+  - port: 8181
 
 vscode:
   extensions:
