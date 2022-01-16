@@ -96,10 +96,6 @@ services:
       - ./base/hadoop/hadoop-hive.env
     ports:
       - "50070:50070"
-    # deploy:
-    #   resources:
-    #     limits:
-    #       memory: 500m
 
   datanode1:
     image: fjardim/datanode
@@ -115,10 +111,6 @@ services:
       - namenode
     ports:
       - "50075:50075"
-    # deploy:
-    #   resources:
-    #     limits:
-    #       memory: 500m
 
   datanode2:
     image: fjardim/datanode
@@ -134,10 +126,6 @@ services:
       - namenode
     ports:
       - "50080:50075"
-    # deploy:
-    #   resources:
-    #     limits:
-    #       memory: 500m
   
   hive-server:
     image: fjardim/hive
@@ -152,10 +140,6 @@ services:
       - "10000:10000"
     depends_on:
       - hive-metastore
-    # deploy:
-    #   resources:
-    #     limits:
-    #       memory: 500m
   
   hive-metastore:
     image: fjardim/hive
@@ -170,10 +154,6 @@ services:
       - "9083:9083"
     depends_on:
       - hive-metastore-postgresql
-    # deploy:
-    #   resources:
-    #     limits:
-    #       memory: 500m
   
   hive-metastore-postgresql:
     image: fjardim/hive-metastore
@@ -184,10 +164,6 @@ services:
     depends_on:
       - datanode1
       - datanode2
-    # deploy:
-    #   resources:
-    #     limits:
-    #       memory: 500m
 
   # Access Hue at localhost:8888 using admin/admin
   hue:
@@ -203,21 +179,13 @@ services:
     depends_on:
       - "database"
       - "hive-server"
-    # deploy:
-    #   resources:
-    #     limits:
-    #       memory: 500m
   
   database:
     image: fjardim/mysql
     container_name: database
     hostname: database
     ports:
-        - "33061:3306"
-    # deploy:
-    #   resources:
-    #     limits:
-    #       memory: 500m
+        - "3306:3306"
     command: mysqld --innodb-flush-method=O_DSYNC --innodb-use-native-aio=OFF --init-file /data/application/init.sql
     volumes:
         - ./base/mysql/data:/var/lib/mysql
