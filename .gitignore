@@ -6,6 +6,19 @@ base/hdfs/datanode2/
 
 workspace/*
 !workspace/*.ipynb
-# base/mysql/data/*
+
+base/mysql/data/ib_log*
+base/mysql/data/ib_buffer*
+base/mysql/data/ibdata*
+
+base/mysql/data/hue/auth_user.ibd
+base/mysql/data/hue/axes_accesslog.ibd
+base/mysql/data/hue/beeswax_session.ibd
+base/mysql/data/hue/desktop_document*.ibd
+base/mysql/data/hue/django_session.ibd
+base/mysql/data/hue/useradmin_userprofile.ibd
+base/mysql/data/hue/userainnodb_index_stats.ibd
+base/mysql/data/hue/userainnodb_table_stats.ibd
+
 data/s3/
 
