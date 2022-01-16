@@ -13,7 +13,7 @@ ports:
   - port: 8888
   # Minio       : Port 9001 using savas/savas123
   - port: 9001
-  - port: 33061
+  - port: 3306
   - port: 50070
   - port: 4040
   - port: 9000
