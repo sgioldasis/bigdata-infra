@@ -6,6 +6,6 @@ base/hdfs/datanode2/
 
 workspace/*
 !workspace/*.ipynb
-base/mysql/data/*
+# base/mysql/data/*
 data/s3/
 
