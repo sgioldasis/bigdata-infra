@@ -1,0 +1,11 @@
+# data/
+base/hdfs/namenode/
+base/postgresql/
+base/hdfs/datanode1/
+base/hdfs/datanode2/
+
+workspace/*
+!workspace/*.ipynb
+base/mysql/data/*
+data/s3/
+
