@@ -1,7 +1,7 @@
 tasks:
   - init: |
       docker-compose pull
-      docker-compose up
+      docker-compose build
   - command: |
       docker-compose up
 
