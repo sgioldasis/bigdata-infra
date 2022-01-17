@@ -7,9 +7,11 @@ base/hdfs/datanode2/
 workspace/*
 !workspace/*.ipynb
 
-base/mysql/data/ib_log*
-base/mysql/data/ib_buffer*
-base/mysql/data/ibdata*
+base/mysql/data/ib_logfile0
+base/mysql/data/ib_logfile1
+base/mysql/data/ib_buffer_pool
+base/mysql/data/ibdata1
+base/mysql/data/ibtmp1
 
 base/mysql/data/hue/auth_user.ibd
 base/mysql/data/hue/axes_accesslog.ibd
