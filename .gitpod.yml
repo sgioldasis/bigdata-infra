@@ -9,22 +9,44 @@ tasks:
 ports:
   # JupyterLab  : Port 8889
   - port: 8889
+    description: jupyterlab
+    onOpen: open-browser
   # Hue         : Port 8888 using admin/admin
   - port: 8888
+    description: hue
+    onOpen: ignore
   # Minio       : Port 9001 using savas/savas123
   - port: 9001
+    description: minio
+    onOpen: ignore
+  # CloudBeaver : Port 8978 using cbadmin/cbadmin
+  - port: 8978
+    description: cloudbeaver
+    onOpen: ignore
   - port: 3306
+    onOpen: ignore
   - port: 50070
+    onOpen: ignore
   - port: 4040
+    onOpen: ignore
   - port: 9000
+    onOpen: ignore
   - port: 50080
+    onOpen: ignore
   - port: 9083
+    onOpen: ignore
   - port: 50075
+    onOpen: ignore
   - port: 8080
+    onOpen: ignore
   - port: 10000
+    onOpen: ignore
   - port: 7077
+    onOpen: ignore
   - port: 8182
+    onOpen: ignore
   - port: 8181
+    onOpen: ignore
 
 vscode:
   extensions:

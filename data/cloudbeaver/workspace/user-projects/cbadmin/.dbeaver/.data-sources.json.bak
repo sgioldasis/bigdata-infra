@@ -1,0 +1,36 @@
+{
+	"folders": {},
+	"connections": {
+		"postgres-jdbc-17e66801bdf-5fc3e84ac9de6b0": {
+			"provider": "postgresql",
+			"driver": "postgres-jdbc",
+			"name": "PostgreSQL (Template)",
+			"save-password": true,
+			"show-system-objects": true,
+			"read-only": true,
+			"virtual-model-id": "postgresql-template-1",
+			"configuration": {
+				"host": "hive_metastore_postgresql",
+				"port": "5432",
+				"database": "postgres",
+				"url": "jdbc:postgresql://hive_metastore_postgresql:5432/postgres",
+				"type": "dev",
+				"provider-properties": {
+					"@dbeaver-show-non-default-db@": "true"
+				},
+				"auth-model": "native"
+			}
+		}
+	},
+	"connection-types": {
+		"dev": {
+			"name": "Development",
+			"color": "255,255,255",
+			"description": "Regular development database",
+			"auto-commit": true,
+			"confirm-execute": false,
+			"confirm-data-change": false,
+			"auto-close-transactions": false
+		}
+	}
+}

@@ -5,6 +5,15 @@ services:
   # Hue         : Port 8888 using admin/admin
   # Minio       : Port 9001 using savas/savas123
 
+  cloudbeaver:
+    image: dbeaver/cloudbeaver:latest
+    container_name: cloudbeaver
+    ports:
+      - 8978:8978
+    volumes:
+      - ./data/cloudbeaver/workspace:/opt/cloudbeaver/workspace
+    restart: always
+
   jupyterlab:
     # image: cluster-apache-spark:3.2.0
     build: ./docker-spark-cluster

@@ -1,0 +1,79 @@
+!SESSION 2022-01-17 05:11:17.181 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=11.0.12
+java.vendor=Eclipse Foundation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en
+Framework arguments:  -product io.cloudbeaver.product.ce.product -web-config conf/cloudbeaver.conf -registryMultiLanguage
+Command-line arguments:  -product io.cloudbeaver.product.ce.product -web-config conf/cloudbeaver.conf -registryMultiLanguage
+
+!ENTRY org.jkiss.dbeaver.model 1 0 2022-01-17 05:11:28.022
+!MESSAGE Initialize web platform...
+
+!ENTRY org.jkiss.dbeaver.model 1 0 2022-01-17 05:11:34.223
+!MESSAGE Available drivers: ClickHouse,DB2 LUW,DB2 iSeries/AS 400,Firebird,H2 Embedded,Derby Server,Trino,MS SQL Server / SQL Server,MySQL,MariaDB,Oracle,PostgreSQL,SQLite
+
+!ENTRY org.jkiss.dbeaver.model 1 0 2022-01-17 05:11:34.291
+!MESSAGE Web platform initialized (6283ms)
+
+!ENTRY org.jkiss.dbeaver.model 1 0 2022-01-17 05:11:43.669
+!MESSAGE No auto configuration was found. Server must be configured manually
+
+!ENTRY org.jkiss.dbeaver.model 1 0 2022-01-17 05:12:42.022
+!MESSAGE Configure CB database security
+!SESSION 2022-01-17 06:39:16.936 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=11.0.12
+java.vendor=Eclipse Foundation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en
+Framework arguments:  -product io.cloudbeaver.product.ce.product -web-config conf/cloudbeaver.conf -registryMultiLanguage
+Command-line arguments:  -product io.cloudbeaver.product.ce.product -web-config conf/cloudbeaver.conf -registryMultiLanguage
+
+!ENTRY org.jkiss.dbeaver.model 1 0 2022-01-17 06:39:23.937
+!MESSAGE Initialize web platform...
+
+!ENTRY org.eclipse.core.resources 2 10035 2022-01-17 06:39:25.674
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.jkiss.dbeaver.model 1 0 2022-01-17 06:39:29.028
+!MESSAGE Available drivers: ClickHouse,DB2 LUW,DB2 iSeries/AS 400,Firebird,H2 Embedded,Derby Server,Trino,MS SQL Server / SQL Server,MySQL,MariaDB,Oracle,PostgreSQL,SQLite
+
+!ENTRY org.jkiss.dbeaver.model 1 0 2022-01-17 06:39:29.454
+!MESSAGE Web platform initialized (5539ms)
+!SESSION 2022-01-17 06:57:15.803 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=11.0.12
+java.vendor=Eclipse Foundation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en
+Framework arguments:  -product io.cloudbeaver.product.ce.product -web-config conf/cloudbeaver.conf -registryMultiLanguage
+Command-line arguments:  -product io.cloudbeaver.product.ce.product -web-config conf/cloudbeaver.conf -registryMultiLanguage
+
+!ENTRY org.jkiss.dbeaver.model 1 0 2022-01-17 06:57:28.671
+!MESSAGE Initialize web platform...
+
+!ENTRY org.eclipse.core.resources 2 10035 2022-01-17 06:57:30.930
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.jkiss.dbeaver.model 1 0 2022-01-17 06:57:33.513
+!MESSAGE Available drivers: ClickHouse,DB2 LUW,DB2 iSeries/AS 400,Firebird,H2 Embedded,Derby Server,Trino,MS SQL Server / SQL Server,MySQL,MariaDB,Oracle,PostgreSQL,SQLite
+
+!ENTRY org.jkiss.dbeaver.model 1 0 2022-01-17 06:57:33.581
+!MESSAGE Web platform initialized (4928ms)
+!SESSION 2022-01-17 07:04:05.272 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=11.0.12
+java.vendor=Eclipse Foundation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en
+Framework arguments:  -product io.cloudbeaver.product.ce.product -web-config conf/cloudbeaver.conf -registryMultiLanguage
+Command-line arguments:  -product io.cloudbeaver.product.ce.product -web-config conf/cloudbeaver.conf -registryMultiLanguage
+
+!ENTRY org.jkiss.dbeaver.model 1 0 2022-01-17 07:04:15.480
+!MESSAGE Initialize web platform...
+
+!ENTRY org.eclipse.core.resources 2 10035 2022-01-17 07:04:18.663
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.jkiss.dbeaver.model 1 0 2022-01-17 07:04:22.617
+!MESSAGE Available drivers: ClickHouse,DB2 LUW,DB2 iSeries/AS 400,Firebird,H2 Embedded,Derby Server,Trino,MS SQL Server / SQL Server,MySQL,MariaDB,Oracle,PostgreSQL,SQLite
+
+!ENTRY org.jkiss.dbeaver.model 1 0 2022-01-17 07:04:22.713
+!MESSAGE Web platform initialized (7236ms)
