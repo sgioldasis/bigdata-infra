@@ -77,3 +77,22 @@ Command-line arguments:  -product io.cloudbeaver.product.ce.product -web-config 
 
 !ENTRY org.jkiss.dbeaver.model 1 0 2022-01-17 07:04:22.713
 !MESSAGE Web platform initialized (7236ms)
+!SESSION 2022-01-17 07:45:36.449 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=11.0.12
+java.vendor=Eclipse Foundation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en
+Framework arguments:  -product io.cloudbeaver.product.ce.product -web-config conf/cloudbeaver.conf -registryMultiLanguage
+Command-line arguments:  -product io.cloudbeaver.product.ce.product -web-config conf/cloudbeaver.conf -registryMultiLanguage
+
+!ENTRY org.jkiss.dbeaver.model 1 0 2022-01-17 07:45:58.696
+!MESSAGE Initialize web platform...
+
+!ENTRY org.eclipse.core.resources 2 10035 2022-01-17 07:46:03.043
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.jkiss.dbeaver.model 1 0 2022-01-17 07:46:06.986
+!MESSAGE Available drivers: ClickHouse,DB2 LUW,DB2 iSeries/AS 400,Firebird,H2 Embedded,Derby Server,Trino,MS SQL Server / SQL Server,MySQL,MariaDB,Oracle,PostgreSQL,SQLite
+
+!ENTRY org.jkiss.dbeaver.model 1 0 2022-01-17 07:46:07.151
+!MESSAGE Web platform initialized (8473ms)

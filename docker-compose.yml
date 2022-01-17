@@ -12,11 +12,15 @@ services:
       - 8978:8978
     volumes:
       - ./data/cloudbeaver/workspace:/opt/cloudbeaver/workspace
+    environment:
+      SERVICE_PRECONDITION: "hive-metastore:9083"
+    depends_on:
+      - hive-metastore
     restart: always
 
   jupyterlab:
-    # image: cluster-apache-spark:3.2.0
-    build: ./docker-spark-cluster
+    image: sgioldasis/docker-spark-cluster:3.2.0
+    # build: ./docker-spark-cluster
     container_name: jupyterlab
     ports:
       - 8889:8888
@@ -28,8 +32,8 @@ services:
     command: "jupyter lab --allow-root --ip 0.0.0.0 --port 8888 --NotebookApp.token='' --NotebookApp.password='' --notebook-dir /opt/workspace"      
 
   spark-master:
-    # image: cluster-apache-spark:3.2.0
-    build: ./docker-spark-cluster
+    image: sgioldasis/docker-spark-cluster:3.2.0
+    # build: ./docker-spark-cluster
     container_name: spark-master
     ports:
       - "8080:8080"
@@ -47,8 +51,8 @@ services:
       - SPARK_WORKLOAD=master
 
   spark-worker-1:
-    # image: cluster-apache-spark:3.2.0
-    build: ./docker-spark-cluster
+    image: sgioldasis/docker-spark-cluster:3.2.0
+    # build: ./docker-spark-cluster
     container_name: spark-worker-1
     ports:
       - "8181:8080"
@@ -70,8 +74,8 @@ services:
       - ./base/spark_conf/hive/hive-site.xml:/usr/bin/spark-3.0.0-bin-hadoop3.2/conf/hive-site.xml
 
   spark-worker-2:
-    # image: cluster-apache-spark:3.2.0
-    build: ./docker-spark-cluster
+    image: sgioldasis/docker-spark-cluster:3.2.0
+    # build: ./docker-spark-cluster
     container_name: spark-worker-2
     ports:
       - "8182:8080"
