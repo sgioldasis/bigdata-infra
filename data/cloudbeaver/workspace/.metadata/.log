@@ -115,3 +115,41 @@ Command-line arguments:  -product io.cloudbeaver.product.ce.product -web-config 
 
 !ENTRY org.jkiss.dbeaver.model 1 0 2022-01-17 08:02:07.293
 !MESSAGE Web platform initialized (6804ms)
+!SESSION 2022-05-18 06:10:54.402 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=11.0.14.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en
+Framework arguments:  -product io.cloudbeaver.product.ce.product -web-config conf/cloudbeaver.conf -registryMultiLanguage
+Command-line arguments:  -product io.cloudbeaver.product.ce.product -web-config conf/cloudbeaver.conf -registryMultiLanguage
+
+!ENTRY org.jkiss.dbeaver.model 1 0 2022-05-18 06:11:01.417
+!MESSAGE Initialize web platform...
+
+!ENTRY org.eclipse.core.resources 2 10035 2022-05-18 06:11:02.449
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.jkiss.dbeaver.model 1 0 2022-05-18 06:11:03.615
+!MESSAGE Available drivers: ClickHouse (Legacy),ClickHouse,DB2 LUW,DB2 iSeries/AS 400,Firebird,Derby Server,Trino,H2 Embedded,MS SQL Server / SQL Server,MySQL,MariaDB,Oracle,PostgreSQL,SQLite
+
+!ENTRY org.jkiss.dbeaver.model 1 0 2022-05-18 06:11:03.663
+!MESSAGE Web platform initialized (2250ms)
+!SESSION 2022-05-18 18:10:45.588 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=11.0.14.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en
+Framework arguments:  -product io.cloudbeaver.product.ce.product -web-config conf/cloudbeaver.conf -registryMultiLanguage
+Command-line arguments:  -product io.cloudbeaver.product.ce.product -web-config conf/cloudbeaver.conf -registryMultiLanguage
+
+!ENTRY org.jkiss.dbeaver.model 1 0 2022-05-18 18:10:51.728
+!MESSAGE Initialize web platform...
+
+!ENTRY org.eclipse.core.resources 2 10035 2022-05-18 18:10:52.664
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.jkiss.dbeaver.model 1 0 2022-05-18 18:10:54.085
+!MESSAGE Available drivers: ClickHouse (Legacy),ClickHouse,DB2 LUW,DB2 iSeries/AS 400,Firebird,Derby Server,Trino,H2 Embedded,MS SQL Server / SQL Server,MySQL,MariaDB,Oracle,PostgreSQL,SQLite
+
+!ENTRY org.jkiss.dbeaver.model 1 0 2022-05-18 18:10:54.203
+!MESSAGE Web platform initialized (2486ms)
