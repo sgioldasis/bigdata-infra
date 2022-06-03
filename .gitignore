@@ -1,11 +1,16 @@
 # data/
-# base/hdfs/namenode/
+base/hdfs/namenode/
 # base/postgresql/
-# base/hdfs/datanode1/
-# base/hdfs/datanode2/
+base/hdfs/datanode1/
+base/hdfs/datanode2/
 
 workspace/*
 !workspace/*.ipynb
+
+base/mysql/data/
+base/postgresql/
+data/cloudbeaver/
+
 
 # base/mysql/data/ib_logfile0
 # base/mysql/data/ib_logfile1
