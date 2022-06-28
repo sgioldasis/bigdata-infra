@@ -5,18 +5,18 @@ services:
   # Hue         : Port 8888 using admin/admin
   # Minio       : Port 9001 using savas/savas123
 
-  cloudbeaver:
-    image: dbeaver/cloudbeaver:latest
-    container_name: cloudbeaver
-    ports:
-      - 8978:8978
-    volumes:
-      - ./data/cloudbeaver/workspace:/opt/cloudbeaver/workspace
-    environment:
-      SERVICE_PRECONDITION: "hive-metastore:9083"
-    depends_on:
-      - hive-metastore
-    restart: always
+  # cloudbeaver:
+  #   image: dbeaver/cloudbeaver:latest
+  #   container_name: cloudbeaver
+  #   ports:
+  #     - 8978:8978
+  #   volumes:
+  #     - ./data/cloudbeaver/workspace:/opt/cloudbeaver/workspace
+  #   environment:
+  #     SERVICE_PRECONDITION: "hive-metastore:9083"
+  #   depends_on:
+  #     - hive-metastore
+  #   restart: always
 
   jupyterlab:
     image: sgioldasis/docker-spark-cluster:3.2.0
@@ -153,7 +153,11 @@ services:
       - "10000:10000"
     depends_on:
       - hive-metastore
-  
+    healthcheck:
+      test: netstat -anp | grep 10000 > /dev/null
+      timeout: 20s
+      retries: 10
+
   hive-metastore:
     image: fjardim/hive
     container_name: hive_metastore
@@ -189,9 +193,12 @@ services:
     volumes:
       # - ./base/hue/hue-overrides.ini:/usr/share/hue/desktop/conf/z-hue.ini
       - ./base/hue/hue-overrides.ini:/usr/share/hue/desktop/conf/hue.ini
+    # depends_on:
+    #   - "database"
+    #   - "hive-server"
     depends_on:
-      - "database"
-      - "hive-server"
+      hive-server:
+        condition: service_healthy
   
   database:
     image: fjardim/mysql
